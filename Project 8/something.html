@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link id="change-display" rel="stylesheet" href="css/something-change.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(() => {
+            $("#change-button").on("click", () => {
+                if ($("#change-display").attr("href") === "css/something-change.css") {
+                    $("#change-display").removeAttr("href");
+                }
+                $("#change-button").remove();
+            })
+        })  
+    </script>
+
+    <title>Something</title>
+</head>
+<body>
+
+    <header>
+        <img src="images/contact-header.jpg" alt="header image" width="100%" height="auto">
+        <button id="change-button">Change display</button>
+    </header>
+    
+    <main>
+        <article>
+            <section>
+                <h2>Hello world</h2>
+            </section>
+            <section>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut cupiditate quisquam molestiae aut fuga ex error odit, commodi libero ipsum culpa delectus voluptas laborum vel! Exercitationem rerum quae architecto!<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut cupiditate quisquam molestiae aut fuga ex error odit, commodi libero ipsum culpa delectus voluptas laborum vel! Exercitationem rerum quae architecto!<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut cupiditate quisquam molestiae aut fuga ex error odit, commodi libero ipsum culpa delectus voluptas laborum vel! Exercitationem rerum quae architecto!<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut cupiditate quisquam molestiae aut fuga ex error odit, commodi libero ipsum culpa delectus voluptas laborum vel! Exercitationem rerum quae architecto!<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut cupiditate quisquam molestiae aut fuga ex error odit, commodi libero ipsum culpa delectus voluptas laborum vel! Exercitationem rerum quae architecto!<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut cupiditate quisquam molestiae aut fuga ex error odit, commodi libero ipsum culpa delectus voluptas laborum vel! Exercitationem rerum quae architecto!<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut cupiditate quisquam molestiae aut fuga ex error odit, commodi libero ipsum culpa delectus voluptas laborum vel! Exercitationem rerum quae architecto!<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut cupiditate quisquam molestiae aut fuga ex error odit, commodi libero ipsum culpa delectus voluptas laborum vel! Exercitationem rerum quae architecto!<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut cupiditate quisquam molestiae aut fuga ex error odit, commodi libero ipsum culpa delectus voluptas laborum vel! Exercitationem rerum quae architecto!<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut cupiditate quisquam molestiae aut fuga ex error odit, commodi libero ipsum culpa delectus voluptas laborum vel! Exercitationem rerum quae architecto!<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut cupiditate quisquam molestiae aut fuga ex error odit, commodi libero ipsum culpa delectus voluptas laborum vel! Exercitationem rerum quae architecto!<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut cupiditate quisquam molestiae aut fuga ex error odit, commodi libero ipsum culpa delectus voluptas laborum vel! Exercitationem rerum quae architecto!<br>
+                </p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>All rights are reserved &copy;2020. Created by <a href="https://facebook.com/veton.milaimi/587">Veton Milaimi</a></p>
+    </footer>
+</body>
+</html>

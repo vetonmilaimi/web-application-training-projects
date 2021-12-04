@@ -1,0 +1,38 @@
+.contact {
+    text-align: center;
+}
+
+.contact input {
+    padding: 5px;
+    border: 1px solid red;
+}
+
+.contact label {
+    font-size: 25px;
+}
+
+.contact input[type="submit"] {
+    background-color: yellow;
+    color: black;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: rgb(78, 78, 78);
+    color: white;
+    font-size: 25px;
+}
+
+.contact input[type="reset"] {
+    background-color: red;
+    color: blue;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.contact input[type="reset"]:hover {
+    background-color: rgb(132, 132, 236);
+    color: brown;
+    font-size: 25px;
+}

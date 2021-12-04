@@ -1,0 +1,11 @@
+.topnav {
+    background-color: #4DA8DA;
+}
+
+.topnav a{
+    color: #fff;
+}
+
+.topnav a:hover {
+    background-color: #000;
+}

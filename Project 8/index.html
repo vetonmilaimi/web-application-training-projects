@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Veton Milaimi">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/slide-up.css">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+    </script>
+
+    <style>
+        form label,
+        input {
+            padding: 5px;
+            font-size: 25px;
+        }
+
+        form input,
+        textarea {
+            color: #000;
+        }
+
+        form button {   
+            color: blue;
+            font-size: 20px;
+            padding: 5px 15px;
+        }
+    </style>
+
+    <title>e-learning HOME</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="topnav" id="myTopnav">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li class="dropdown"><a href="index.html" class="dropbtn">COURSES</a>
+                    <div class="dropdown-content">
+                        <a href="courses/web.html">Web-development</a>
+                        <a href="courses/jsf.html">JavaScript-Frameworks</a>
+                        <a href="courses/pf.html">Python-Frameworks</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="something.html">SOMETHING</a></li>
+                <li><a href="#">ANOTHER</a></li>
+                <li>
+                    <a class="icon" onclick="topNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <figure>
+                    <img src="images/header.jpg" alt="header" width="100%" height="auto">
+                </figure>
+
+                <h1>Welcome to our e-Learning website</h1>
+
+                <p>
+                    Our website is very helpful for students of IT.
+                    <br>
+                    We make quizes for students and very funny things...
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur ex dolorum nostrum distinctio
+                    aliquid excepturi <br>tenetur sit a! Voluptates debitis at consequuntur vero accusantium totam et
+                    officia minus provident eveniet.
+                </p>
+            </section>
+
+            <hr>
+            <br>
+
+            <section>
+                <h3 style="font-size: 45px;">Send a message to us.</h3>
+                <form action="mailto:veton.milaimi@student.uni-pr.edu" method="post" enctype="text/plain">
+                    <label for="name">Your name</label> <br>
+                    <input type="text" name="name" id="name">
+
+                    <br>
+
+                    <label for="message">Message</label> <br>
+                    <textarea name="message" id="message" cols="42" rows="8"></textarea>
+
+                    <br>
+
+                    <label for="datepicker">Write date</label> <br> 
+                    <input type="text" id="datepicker">
+
+                    <br>
+
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+
+        </article>
+    </main>
+
+    <br>
+
+    <footer>
+        <p style="display: inline-block;">All rights are reserved &copy;
+            <script>document.write(new Date().getFullYear())</script> <span style="color: orange;">e-Learning</span>.
+            Created by: <a href="https://www.facebook.com/veton.milaimi.587/" target="_blank">Veton Milaimi</a> </p>
+    </footer>
+
+    <i class="fas fa-arrow-up" id="goup-button" style="padding-top: 5px;"></i>
+
+    <script src="js/script.js"></script>
+    <script src="js/jquery.js"></script>
+</body>
+
+</html>

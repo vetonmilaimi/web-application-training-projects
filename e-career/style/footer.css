@@ -1,0 +1,15 @@
+footer {
+    background-color: #4DA8DA;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: orange;
+}

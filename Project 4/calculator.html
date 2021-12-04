@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Project 4 -- calculator</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no' />
+    <meta name="theme-color" content="#00BFFF" />
+    <meta name="navigation-bar-button-color" content="#00BFFF" />
+    <meta name="navigation-bar-button-border-color" content="#00FFFF" />
+    <meta name="navigation-bar-button-hasshadow" content="true" />
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            font-size: 17px;
+            margin: 0px;
+            background: rgb(202, 199, 199);
+        }
+        
+        nav,
+        section,
+        article {
+            margin: 5px;
+            padding: 8px;
+        }
+        
+        #content {
+            text-align: center;
+        }
+        
+        header,
+        footer {
+            background-color: Red;
+            color: white;
+            padding: 5px;
+            margin: 0;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        button {
+            border-radius: 30px;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            font-size: 25px;
+            background-color: #00BFFF;
+            color: white;
+            border: #00FFFF solid 1px;
+        }
+        
+        input {
+            border-radius: 5px;
+            width: 250px;
+            font-size: 25px;
+            background-color: #00BFFF;
+            color: white;
+            border: #00FFFF solid 1px;
+            padding: 4px;
+            text-align: center;
+        }
+        
+        nav ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <article>
+            <div id='content'>
+                <div id='content-app'>
+                    <input type='text' id='field1' readonly value='0' />
+                    <br><br>
+                    <button onclick='writeNumber(this)' id='n1'>1</button>
+                    <button onclick='writeNumber(this)' id='n2'>2</button>
+                    <button onclick='writeNumber(this)' id='n3'>3</button>
+                    <button onclick='writeNumber(this)' id='n4'>4</button>
+                    <br><br>
+
+                    <button onclick='writeNumber(this)' id='n5'>5</button>
+                    <button onclick='writeNumber(this)' id='n6'>6</button>
+                    <button onclick='writeNumber(this)' id='n7'>7</button>
+                    <button onclick='writeNumber(this)' id='n8'>8</button>
+                    <br><br>
+
+                    <button onclick='writeNumber(this)' id='n9'>9</button>
+                    <button onclick='writeNumber(this)' id='n0'>0</button>
+                    <button onclick='setDecimal(this,true)' id='dec'>.</button>
+                    <button onclick='setOperator(this)' id='sum'>+</button>
+                    <br><br>
+
+                    <button onclick='setOperator(this)' id='sustract'>-</button>
+                    <button onclick='setOperator(this)' id='multi'>*</button>
+                    <button onclick='setOperator(this)' id='divide'>/</button>
+                    <button onclick='cleartxt()' id='C'>Cl</button>
+                    <br><br>
+
+                    <button onclick='calculate()' id='calcular'>=</button>
+                    <button onclick='removeLastNumber()' id='removeLast'>Bck</button>
+                </div>
+            </div>
+            <br><br><br>
+        </article>
+    </section>
+
+    <script>
+        function writeNumber(elementId) {
+            var outputValueTo = document.getElementById('field1');
+
+            if (outputValueTo.value == '0' || outputValueTo.value == 'Syntax error') {
+                outputValueTo.value = elementId.textContent;
+            } else {
+
+                outputValueTo.value += elementId.textContent;
+            }
+        }
+
+        function cleartxt() {
+            document.getElementById('field1').value = '0';
+            document.getElementById('dec').disabled = false;
+        }
+
+        function setOperator(elementId) {
+            var outputValueTo = document.getElementById('field1');
+            if (outputValueTo.value == '0' || outputValueTo.value == 'Syntax error') {
+                outputValueTo.value = '0';
+            } else {
+                outputValueTo.value += elementId.textContent;
+                document.getElementById('dec').disabled = false;
+            }
+        }
+
+        function setDecimal(elementId, status) {
+            var outputValueTo = document.getElementById('field1');
+            outputValueTo.value += elementId.textContent;
+            document.getElementById('dec').disabled = status;
+        }
+
+        function calculate() {
+
+            try {
+
+                var field1txt = document.getElementById('field1');
+                if (field1txt.value != '') {
+                    var calculateResult = eval(field1txt.value);
+                    field1txt.value = calculateResult;
+                }
+            } catch (err) {
+
+                field1txt.value = "Syntax error";
+
+            }
+
+        }
+
+        function removeLastNumber() {
+
+            var field1txt = document.getElementById('field1');
+
+            if (field1txt.value.length == 1 || field1txt.value == '0' || field1txt.value == 'Syntax error') {
+                field1txt.value = '0';
+                document.getElementById('dec').disabled = false;
+            } else {
+                field1txt.value = field1txt.value.substring(0, field1txt.value.length - 1);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+
+    var firstCorrect = "JavaScript is Scripting Language";
+    var secondCorrect = "JavaScript is Interpreted Language";
+    var thirdCorrect = "ReactJs is created from Facebook";
+    var fourthCorrect = "NPM - Node Package Manager";
+    var fifthCorrect = "VueJs is FrontEnd Framework";
+
+
+
+    var firstInputs = document.getElementsByTagName("div")[0];
+    var secondInputs = document.getElementsByTagName("div")[1];
+    var thirdInputs = document.getElementsByTagName("div")[2];
+    var fourthInputs = document.getElementsByTagName("div")[3];
+    var fifthInputs = document.getElementsByTagName("div")[4];
+
+
+
+            // var retryButtonLength = document.getElementsByClassName("retry-button").length;
+
+            // if(retryButtonLength > 1) {
+            //     // location.reload();
+
+            // }
+
+            // if (retryButtonLength <= 1) {
+            //     form.addEventListener("reset", (event) =>{
+            //         event.preventDefault();
+            //         var retryButton = document.querySelectorAll(".retry-button")[0];
+            //         // for (var i = 0; i < retryButton.length; i++) {
+            //         //     retryButton[i].remove();
+            //         // }
+            //         retryButton.remove();
+
+            //         var removeDisplayScore = document.getElementById("display-score");
+            //         removeDisplayScore.remove();
+                
+            //     })
+            // } else {
+            //     location.reload();
+            // }
+
+
+        var button;
+        var position1;
+
+        button.onclick = function(){
+            alert("i run");
+           form.reset();
+           position1.removeChild(position1.childNodes[0]);
+           button.remove();
+           return false;
+          };

@@ -1,0 +1,52 @@
+header {
+    background-color: #636363;
+}
+
+a {
+    text-decoration: none;
+}
+
+.name {
+    color: chartreuse;
+    font-size: 45px;
+    padding-top: 3px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+}
+
+.navigation {
+    text-align: center;
+    overflow: hidden;
+    background-color: #636363;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block ;
+}
+
+
+.navigation li {
+    float: left;
+}
+
+.navigation li a {
+    display: block;
+    color: greenyellow;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+}
+
+.navigation li a:hover {
+    background-color: lawngreen;
+    color: black;
+    border: 1px solid crimson;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navigation li {
+        float: none;
+    }
+}

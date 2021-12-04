@@ -1,0 +1,154 @@
+* {
+    font-family: monospace;
+}
+
+body {
+    text-align: center;
+    background-color: #666666;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 30px;
+    color: blue;
+    padding-top: 5px; 
+    text-transform: capitalize;
+}
+
+.header {
+    background-color: #8a8a8a;
+}
+
+.header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    width: 30%;
+    height: auto;
+}
+
+.navigation button {
+    background-color: lawngreen;
+    margin: 10px;
+}
+
+.navigation button a {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;    
+    margin: 20px;
+}
+
+.navigation button:hover {
+    background-color: #b0d9d3;
+    border: 2px solid yellowgreen;
+    box-shadow: 0 0 5px 5px #797a7d;
+}
+
+.go-up img{
+    float: right;
+    opacity: 0.3;
+}
+
+.go-up img:hover {
+    box-shadow: 0 0 5px 5px #797a7d;
+    opacity: 1;
+}
+
+.about-me {
+    background-color:#8a8a8a;
+}
+
+.about-me > p {
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.education {
+    background-color:#8a8a8a;
+}
+
+.education > ul {
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.education > ul > li {
+    font-size: 18px;
+    color: #e8e848;
+    list-style-type: circle;
+}
+
+.experience {
+    background-color:#8a8a8a;
+    padding: 15px;
+}
+
+.experience table {
+    margin: 15px;
+}
+
+.experience table, th , td {
+    border: 2px solid #025ee9;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.experience th {
+    font-size: 25px;
+}
+
+.experience td {
+    font-size: 18px;
+    color: aqua;
+}
+
+.languages {
+    background-color:#8a8a8a;
+}
+
+.languages > ul {
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.languages > ul > li {
+    font-family: Arial;
+    font-size: 18px;
+    color: lightgreen;
+    list-style-type: circle;
+}
+
+.contact-me {
+    background-color:#8a8a8a;
+}
+
+.contact-me > p {
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.contact-me > p > .fb-button  {
+    background-color: #025ee9;
+
+}
+
+.contact-me > p > .fb-button > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-me > p > .insta-button  {
+    background-color: rgb(64,93,230);
+}
+
+.contact-me > p > .insta-button > a {
+    text-decoration: none;
+    color: #fff;
+}

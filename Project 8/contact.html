@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Veton Milaimi">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/contact-form.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/slide-up.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>e-Learning CONTACT US</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul class="topnav" id="myTopnav">
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown"><a href="index.html" class="dropbtn">COURSES</a>
+                    <div class="dropdown-content">
+                        <a href="courses/web.html">Web-development</a>
+                        <a href="courses/jsf.html">JavaScript-Frameworks</a>
+                        <a href="courses/pf.html">Python-Frameworks</a>
+                    </div>
+                </li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+                <li><a href="something.html">SOMETHING</a></li>
+                <li><a href="#">ANOTHER</a></li>
+                <li>
+                    <a class="icon" onclick="topNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <figure>
+                    <img src="images/contact-header.jpg" alt="contact" width="100%" height="auto">
+                </figure>
+            </section>
+
+            <section>
+                <form action="mailto:veton.milaimi@student.uni-pr.edu" method="post" enctype="text/plain">
+                    <label for="fullName">Your Full Name:</label><br>
+                    <input type="text" name="fullName" id="fullName"> 
+                    
+                    <br>
+
+                    <label for="email">Your email:</label><br>
+                    <input type="text" name="email" id="email"> 
+                    
+                    <br>
+
+                    <label for="text">Your message:</label><br>
+                    <textarea name="text" id="text" cols="41" rows="8"></textarea>
+
+                    <br>
+
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </article>
+
+        <hr>
+
+        <article>
+            <section>
+                <h1>Here is our location</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d46940.210038582816!2d21.12370786360921!3d42.66637476673427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssq!2s!4v1606402702033!5m2!1ssq!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </section>
+        </article>
+    </main>
+
+    <br>
+
+    <footer>
+        <p style="display: inline-block;">All rights are reserved &copy;<script>document.write(new Date().getFullYear())</script> <span style="color: orange;">e-Learning</span>. Created by: <a href="https://www.facebook.com/veton.milaimi.587/" target="_blank">Veton Milaimi</a></p>
+    </footer>
+
+    <i class="fas fa-arrow-up" id="goup-button" style="padding-top: 5px;"></i>>
+
+    <script src="js/script.js"></script>
+    <script src="js/jquery.js"></script>
+</body>
+</html>

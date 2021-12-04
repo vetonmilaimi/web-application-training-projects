@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Third project of me in web application development">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <title>Project 3</title>
+</head>
+<body>
+<!-- ######################## HEADER ########################### -->
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home page</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="news.html">News</a></li>
+                <li style="padding-top: 9px;">
+                    <form action="https://www.google.com/search" method="GET">
+                        <input type="text" name="q" placeholder="Google Search">
+                        <input type="submit" value="Search">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<!-- ######################## END OF HEADER ########################### -->
+
+<main>
+    <section>
+        <article>
+            <div class="contact">
+                <h2 style="color: blue;">Send Us an Email using this contact form below...</h2><hr>
+                <form action="mailto:veton.milaimi@student.uni-pr.edu" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" name="name" required><br>
+
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="mail" required><br>
+
+                    <label for="msg">Message:</label>
+                    <input id="msg" type="text" name="comment" required><br><br>
+
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br>
+
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
+        </article>
+    </section>
+</main>
+
+<hr>
+
+<footer>
+    <p style="font-size: 19px; color:white">&copy;2020 Travelingo. Designed by: <a href="https://fb.com/veton.milaimi.587" style="color: white; text-decoration: none;" target="_blank">Veton Milaimi</a></p>
+</footer>
+</body>
+</html>

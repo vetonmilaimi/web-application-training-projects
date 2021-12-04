@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * { 
+            text-align: center;
+        }
+
+        label {
+            font-size: 25px;
+        }
+        
+        input {
+            font-size: 25px;
+        }
+        
+        button {
+            font-size: 25px;
+        }
+        
+        select {
+            font-size: 25px;
+        }
+        
+        option {
+            font-size: 25px;
+        }
+
+        li {
+            font-size: 25px;
+        }
+    </style>
+
+    <title>Project 5</title>
+</head>
+<body>
+
+    <main>
+        <article>
+            <section>
+                <label for="string1">Write Something:</label>
+                <input type="text" id="string1">
+
+                <button onclick="findAndReplace()">Search and change</button>
+
+                <p id="another"></p>
+            </section>
+        </article>
+        <br>
+        <hr>
+        <br>
+        <article>
+            <section>
+                <label for="feelings">"How are you feeling?"</label>
+                <select name="feelings" id="feelings">
+                    <option value="good">I'm feel very good</option>
+                    <option value="notgood">I'm feel not good</option>
+                    <option value="bad">I'm feel bad</option>
+                    <option value="verybad">I'm feel very bad</option>
+                </select>
+
+                <button onclick="psychoanalysis()">Submit feelings</button>
+
+                <h1 id="display-feelings"></h1>
+            </section>
+        </article>
+        <br>
+        <hr>
+        <br>
+        <article>
+            <section>
+
+                <label for="born-year">Write your born year:</label>
+                <input type="text" id="born-year">
+
+                <button onclick="sellBook()">Find Best Book</button>
+                <br>
+                <h1 id="yourAge"></h1>
+                <ul id="container">
+                    
+                </ul>
+            </section>
+        </article>
+    </main>
+    
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

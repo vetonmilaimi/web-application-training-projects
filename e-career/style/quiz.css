@@ -1,0 +1,17 @@
+main {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.quiz-info {
+    color: #fff;    
+}
+
+.question-title {
+    color: rgb(238, 255, 0);
+}
+
+.btn {
+    margin: 15px;
+    
+}

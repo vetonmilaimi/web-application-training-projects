@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check</title>
+
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Check Number if one of two number is 100 or their sum is 100</h1>
+
+    <input type="text" id="numField1">
+    <input type="text" id="numField2"><br><br>
+    <input class="button" type="submit" value="Check" onclick="check()">
+
+    <p id="display">Result:</p>
+
+    <script>
+
+
+
+        function check() {
+            var numField1 = document.getElementById('numField1');
+            var numField2 = document.getElementById('numField2');
+            var resultField = document.getElementById('resultField');
+    
+            var result;
+            var x = numField1.value;
+            var y = numField2.value;
+            var add= parseInt(y)+parseInt(x);
+            console.log(add);
+            if (numField1.value === 100 || numField2.value === 100) {
+                result = true;
+                document.getElementById('display').innerText = result;
+            } else if (add === 100) {
+                result = true;
+                document.getElementById('display').innerText = result;
+            } else {
+                result = false;
+                document.getElementById('display').innerText = result;
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

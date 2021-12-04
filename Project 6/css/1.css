@@ -1,0 +1,27 @@
+* {
+    text-align: left;
+}
+
+body {
+    margin: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    background-color: orange;
+    color: lightblue;
+    padding: 15px;
+}
+
+label {
+    font-size: 25px;
+}
+
+input {
+    font-size: 25px;
+}
+
+button {
+    font-size: 25px;
+}

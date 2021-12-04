@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4</title>
+
+    <!-- ######################### The link for hamburger icon and any other icon from Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="css/1.css"> <!-- ######## External CSS ##########-->
+
+
+    <!-- ######################## Internal CSS #########################-->
+    <style>
+        input {
+            color: black;
+            text-align: right;
+            font-size: 25px;
+        }
+
+       label {
+            font-size: 25px;
+        }
+
+        button {
+            font-size: 25px;
+            background-color: slategrey;
+        }
+
+        button:hover {
+            font-size: 28px;
+            background-color: white;
+            color: red;
+        }
+
+        main p {
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ############################# Header  ######################## -->
+    <header>
+        <nav>
+            <div>
+                <ul class="topnav" id="myTopnav">
+                    <li><a href="#">Home Page</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Something</a></li>
+                    <li><a href="#">Another</a></li>
+                    <li class="right-nav"><a href="#">Login</a></li>
+                    <li class="right-nav"><a href="#">Register</a></li>
+                    <li>
+                        <a class="icon" onclick="responsiveNav()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <img src="images/header.jpg" alt="header" width="100%" style="margin: 5px 0px">
+            <hr>
+        </nav>
+    </header>
+    <!-- ############################# End of Header #################### -->
+
+
+    <!-- ############################# Main  ######################## -->
+    <main>
+
+        <article>
+            <section>
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" id="fname">
+                    <br>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname">
+
+                    <br>
+                    <p id="display">Result:</p>
+
+                    <button type="submit"  onclick="displayLength()">Display</button>
+
+            </section>
+        </article>
+
+        <hr>
+
+        <article>
+            <section>
+                <label for="name1">Name 1:</label>
+                <input type="text" name="name1" id="name1">
+                <br>
+                <label for="name2">Name 2:</label>
+                <input type="text" name="name2" id="name2">
+
+                <p id = "_name1">Name 1</p>
+                <p id = "_name2">Name 2</p>
+
+                <button type="submit"  onclick="sortName()">Sort</button>
+
+            </section>
+        </article>
+
+        <hr><br><br>
+
+        <article>
+            <section>
+                <button onclick="window.print()" style="font-size: 30px; color: blue">Print this Page</button>
+                <!-- #### Some Inline CSS ####-->
+            </section>
+        </article>
+    </main>
+    <!-- ############################# End of Main  ######################## -->
+
+
+
+    <script src="js/1.js"></script> <!-- ########## External JavaScript  ############-->
+
+
+    <!-- ##################################### Internal JavaScript #####################################  -->
+    <script>
+
+        function displayLength() {
+            var firstName = document.getElementById('fname').value;
+            var lastName = document.getElementById('lname').value;
+            var result = firstName.length + lastName.length;
+
+            document.getElementById("display").innerText = "Result: The length of your full name is: " + result;
+            
+            alert("The length of your full name is: " + result);
+
+        }
+
+        function sortName(name1, name2) {
+            var name1 = document.getElementById('name1').value;
+            var name2 = document.getElementById('name2').value;
+            var _name1 = document.getElementById('_name1');
+            var _name2 = document.getElementById('_name2');
+
+            var names = [name1, name2];
+            names.sort();
+
+            _name1.innerText = '1.' + names[0];
+            _name2.innerText = '2.' + names[1];
+        }
+
+
+    </script>
+    <!-- ##################################### End of Internal JavaScript #####################################  -->
+
+
+</body>
+
+</html>
